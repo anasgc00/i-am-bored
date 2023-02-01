@@ -7,6 +7,7 @@ import 'dart:async' as _i4;
 
 import 'package:dartz/dartz.dart' as _i2;
 import 'package:i_am_bored/core/errors/failures.dart' as _i5;
+import 'package:i_am_bored/data/models/activity_mode.dart' as _i7;
 import 'package:i_am_bored/domain/entities/activity_entity.dart' as _i6;
 import 'package:i_am_bored/domain/repositories/activity_repository.dart' as _i3;
 import 'package:mockito/mockito.dart' as _i1;
@@ -57,4 +58,70 @@ class MockActivityRepository extends _i1.Mock
           ),
         )),
       ) as _i4.Future<_i2.Either<_i5.Failure, _i6.Activity>>);
+  @override
+  _i4.Future<_i2.Either<_i5.Failure, List<_i6.Activity>>>
+      getSavedActivities() => (super.noSuchMethod(
+            Invocation.method(
+              #getSavedActivities,
+              [],
+            ),
+            returnValue:
+                _i4.Future<_i2.Either<_i5.Failure, List<_i6.Activity>>>.value(
+                    _FakeEither_0<_i5.Failure, List<_i6.Activity>>(
+              this,
+              Invocation.method(
+                #getSavedActivities,
+                [],
+              ),
+            )),
+          ) as _i4.Future<_i2.Either<_i5.Failure, List<_i6.Activity>>>);
+  @override
+  _i4.Future<_i2.Either<_i5.Failure, _i6.Activity>> getActivity(String? key) =>
+      (super.noSuchMethod(
+        Invocation.method(
+          #getActivity,
+          [key],
+        ),
+        returnValue: _i4.Future<_i2.Either<_i5.Failure, _i6.Activity>>.value(
+            _FakeEither_0<_i5.Failure, _i6.Activity>(
+          this,
+          Invocation.method(
+            #getActivity,
+            [key],
+          ),
+        )),
+      ) as _i4.Future<_i2.Either<_i5.Failure, _i6.Activity>>);
+  @override
+  _i4.Future<_i2.Either<_i5.Failure, void>> deleteActivity(String? key) =>
+      (super.noSuchMethod(
+        Invocation.method(
+          #deleteActivity,
+          [key],
+        ),
+        returnValue: _i4.Future<_i2.Either<_i5.Failure, void>>.value(
+            _FakeEither_0<_i5.Failure, void>(
+          this,
+          Invocation.method(
+            #deleteActivity,
+            [key],
+          ),
+        )),
+      ) as _i4.Future<_i2.Either<_i5.Failure, void>>);
+  @override
+  _i4.Future<_i2.Either<_i5.Failure, void>> saveActivity(
+          _i7.ActivityModel? activity) =>
+      (super.noSuchMethod(
+        Invocation.method(
+          #saveActivity,
+          [activity],
+        ),
+        returnValue: _i4.Future<_i2.Either<_i5.Failure, void>>.value(
+            _FakeEither_0<_i5.Failure, void>(
+          this,
+          Invocation.method(
+            #saveActivity,
+            [activity],
+          ),
+        )),
+      ) as _i4.Future<_i2.Either<_i5.Failure, void>>);
 }

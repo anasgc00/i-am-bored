@@ -8,21 +8,27 @@
 //  "accessibility": 0
 //}
 
-class Activity {
-  final String activityName;
+import 'package:equatable/equatable.dart';
+
+class Activity extends Equatable {
+  final String activity;
   final String type;
   final int participants;
   final int price;
   final String key;
   final String? link;
-  final int accesibility;
+  final int accessibility;
 
-  Activity(
-      {required this.activityName,
+  const Activity(
+      {required this.activity,
       required this.type,
       required this.participants,
       required this.price,
       required this.key,
       this.link,
-      required this.accesibility});
+      required this.accessibility});
+
+  @override
+  List<Object?> get props =>
+      [activity, accessibility, type, participants, price, key];
 }
