@@ -13,12 +13,12 @@ void main() {
   final mockedRepo = MockActivityRepository();
   final GetRandomActivityUseCase usecase = GetRandomActivityUseCase(mockedRepo);
   final Activity tActivity = Activity(
-      activityName: 'test',
+      activity: 'test',
       type: 'test',
       participants: 1,
       key: '5321',
       price: 1,
-      accesibility: 0);
+      accessibility: 0);
 
   test('should get a random activity from the activity repo', () async {
     //arrange
